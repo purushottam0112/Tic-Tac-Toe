@@ -119,7 +119,7 @@ while count <= 9:
         print("| {} {} {} |".format(b[2][1], b[2][2], b[2][3]))
         print("| {} {} {} |".format(b[3][1], b[3][2], b[3][3]))
         print("---------")
-    
+    # 'columb_row' and 'cross' check who win the the game...
     columb_row = [any([b[1][n] == b[2][n] == b[3][n] == "X" or b[1][n] == b[2][n] == b[3][n] == "O" or b[n][1] == b[n][2] == b[n][3] == "X" or b[1][n] == b[2][n] == b[3][n] == "O"]) for n in range(1, 4)]
 
     cross = [b[1][1] == b[2][2] == b[3][3] == 'X' or b[1][1] == b[2][2] == b[3][3] == 'O' or b[1][3] == b[2][2] == b[3][1] == "X" or b[1][3] == b[2][2] == b[3][1] == "O"]
